@@ -1,38 +1,40 @@
 body {
-    background-color:rgb(209,151,232);
     margin:0;
     font-family: Arial;
+    background-color: #2B313D;
+
 }
 /* Top header */
 #header {
-    
-    top: 0;
-    position: fixed;
-    margin-top:0;
+    top:0;
     width: 100%;
     height: 50px;
-    background-color:rgb(200,200,200);
 }
 #header h1 {
+
     font-size: 2em;
-    font-family: sans-serif;
-    color: #334455;
-    padding-left: 50px;
+    font-family: Arial;
+    color: #D4CEC2;
     display: inline-block;
-    margin: 7px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    
 }
 #header nav {
     height: inherit;
-    float: right;
     clear: both;
+    width: 70%;
     display: inline-block;
-    margin-left: 5px;
 
 }
 #header ul {
     height: inherit;
     margin-top: 0;
     margin-bottom:0;
+    float: right;
 }
 #header nav li {
     display: inline-block;
@@ -40,20 +42,23 @@ body {
     margin-right: 40px;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-right: 2px dashed #fff;
+    
 } 
 #header nav a:hover {
-    color: #C2C2C2;
+    color: #EAE7DB;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
+
 .navi {
-    background-color: #D197E8;
+    color: #D4CEC2;
+
+ /*   background-color: #D197E8;
     border: 1px dashed #fff;
     -webkit-border-radius:6px;
-    -webkit-box-shadow: 0 0 0 4px #D197E8, 2px 2px 4px 4px rgba(25,25,25,.8);
+    -webkit-box-shadow: 0 0 0 4px #D197E8, 2px 2px 4px 4px rgba(25,25,25,.8);*/
     
 }
 
@@ -66,50 +71,39 @@ a {
 /* Center Part*/
 #main-content {
     margin: auto;
-    
-    margin-top: 22%;
-    width: 100%;    
-  
-
-    
+    width: 100%;     
 }
 .main {
-  
     text-align: center;
-    
-   
     width: 100%;
 }
 #pro {
     margin: auto;
     width: 10%;
     font-size: 1.5em;
-    background-color: #D197E8;
-    border: 1px dashed #fff;
-    -webkit-border-radius:6px;
-    -webkit-box-shadow: 0 0 0 4px #D197E8, 2px 2px 4px 4px rgba(25,25,25,.8);
-
+    color: #EAE7DB; 
 }
 .short-cut {
     border:1px solid black;
     height: 400px;
     width: 450px;
     margin: 50px;
-
     border-radius: 20px;
     display: inline-block;
     font-size: 10px;
+    background-color: #EAE1DB; 
 
 }
 .short-cut h3 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .short-cut p {
     text-align: left;
-    margin-left: 20px;
-    font-size: 1em;
-    height:40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5em;
+    
 }
 .short-cut img {
     height: 70%;
@@ -117,66 +111,84 @@ a {
     border-radius: 20px;
 
 }
+#about-me-div {
+    text-align: center;
+}
 
 #about-me {
     text-align: center;
     width:100%;
-    height: 300px;
-    margin-top: 190px;
-  
- 
-
+    height: 250px;
+    background-color: #EAE1DB;
+    text-align: center;
+    padding-top: 70px;
 }
-#about-me h2 {
+#about-me p {
     width: 60%;
+    font-size: 1.5em;
     margin: 20px auto;
-
+}
+#project-div {
+    margin-bottom: 100px;
 }
 #project {
     min-height: 700px;
-     background-color: rgb(241,241,241);
      padding-top: 20px;
 }
 
-#contact-me {
-    
+#contact-me-div {
     width: 100%;
-    height: 300px;
-    text-align: center;
-    margin: auto;
-
- 
-   
+    height: 200px;
+    margin: auto; 
+    background-color: #EAE1DB;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
-.getin-touch {
-    position: relative;
+#contact-me-div ul li a {
+    border-radius: 50%;
+    border:0;
+}
+#contact-me ul li{
     display: inline-block;
-    width: 4.4%;
-    height: 18%;
-    margin-right: 60px;
-    margin-top: 100px;
-    margin-left: 15px;
+    padding: 15px;
+    margin: 15px;
+  }
 
-    text-align: center;
-    border-radius: 4px;
+
+#contact-me {
+    padding-top: 10px;
+    width: 100%;
+}
+#footer {
+    border-top: 1px solid #EAE7DB;;
+    padding: 10px;
+     color: #EAE7DB;
 }
 
-#google {
-    background: url(google.jpeg) no-repeat;
-    background-size:contain;
+/*#twitter {
+     float: left;
 }
 
-#twitter {
-    background: url(twitter.jpeg) no-repeat;
-    background-size:contain;
-}
-#skype {
-    background: url(skype.jpeg) no-repeat;
-    background-size:contain;
-}
 #email {
-    background: url(mail.jpeg) no-repeat;
-    background-size:contain;
+    float: right;    
+}
+*/
+@media(max-width: 400px) {
+    #header {
+        position: relative;
+        font-size: 1em;
+        height: auto;
+    }
+    .main {
+        width: 50%;
+        font-size: 1em;
+    }
+    #about-me {
+       
+        font-size: 1em;
+    }
+
+    
 }
 
 
