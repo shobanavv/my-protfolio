@@ -49,17 +49,11 @@ body {
 }
 
 .navi {
-    color: #D4CEC2;
-
  /*   background-color: #D197E8;
     border: 1px dashed #fff;
     -webkit-border-radius:6px;
     -webkit-box-shadow: 0 0 0 4px #D197E8, 2px 2px 4px 4px rgba(25,25,25,.8);*/
-    
-}
-
-a {
-    color: #334455;
+    color: #D4CEC2;
     font-size: 1.5em;
     text-decoration: none;
 }
@@ -76,7 +70,7 @@ a {
 #pro {
     margin: auto;
     width: 10%;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #EAE7DB; 
 }
 .short-cut {
@@ -125,7 +119,7 @@ a {
     margin: 20px auto;
 }
 #project-div {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 #project {
     min-height: 700px;
@@ -134,31 +128,27 @@ a {
 
 #contact-me-div {
     width: 100%;
-    height: 200px;
-    margin: auto; 
-    background-color: #EAE1DB;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    height: 40px;
+    margin: auto;
+    padding-top: 1px; 
+    background-color: #2B313D;
+    color: #EAE7DB;
+    border-top:1px solid #EAE7DB;
 }
-#contact-me-div ul li a {
-    border-radius: 50%;
-    border:0;
+#contact-me a {
+    color: #EAE7DB;
+    text-decoration: none;
 }
 #contact-me ul li{
-    display: inline-block;
-    padding: 15px;
-    margin: 15px;
+    display: inline;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 1.25em;
   }
 
 
 #contact-me {
-    padding-top: 10px;
     width: 100%;
-}
-#footer {
-    border-top: 1px solid #EAE7DB;;
-    padding: 10px;
-     color: #EAE7DB;
 }
 
 /*#twitter {
@@ -193,13 +183,12 @@ a {
         font-size: 1em;
     }
     #about-me {
-       
         font-size: 1em;
     }
     #contact-me ul li{
         padding: 5px;
-        margin: 5px;
-        font-size: 0.9em;
+        font-size: 1em;
+        display: block;
     }
     #contact-me-div {
         text-align: left;
@@ -217,6 +206,15 @@ a {
     #header nav {
      display: none;
     }
+    #contact-me ul li{
+        padding: 5px;
+        font-size: 1em;
+        display: block;
+    }
+    #contact-me-div {
+        text-align: center;
+        padding-top: 0;
+    }
 }
 
 @media(min-width: 940px) {
@@ -230,7 +228,7 @@ a {
     margin-right: 20px;
     margin-top: 15px;
     margin-bottom: 20px; 
-    } 
+    }
 
 }
 
