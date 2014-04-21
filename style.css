@@ -159,7 +159,7 @@ body {
     float: right;    
 }
 */
-@media(max-width: 400px) {
+@media(min-width: 1px)and (max-width: 400px) {
     #header h1{
       margin-left: 15%;
       padding-bottom: 0;
