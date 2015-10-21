@@ -260,7 +260,7 @@ padding:1em;
     #contact-me ul li{
         padding: 5px;
         font-size: 1em;
-        display: block;
+        display: inline-block;
     }
     #contact-me-div {
         text-align: left;
@@ -269,6 +269,9 @@ padding:1em;
     #project-div {
         margin-bottom: 20px;
 }
+    #up-arrow {
+       display: none;
+    }
 
 }
 @media(min-width: 401px) and (max-width:939px) {
