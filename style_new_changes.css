@@ -1,0 +1,332 @@
+body {
+    margin:0;
+    font-family: Arial;
+    background-color: #2B313D;
+}
+/* Top header */
+#header {
+    top:0;
+    width: 100%;
+    height: 50px;
+    background-color: #EAE1DB;
+    text-align: center;
+}
+/*<h1> Shobana Ramesh</h1>
+#header h1 {
+    font-weight: normal;
+    font-size: 2em;
+    font-family: Arial;
+    color: #2B313D;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}*/
+
+
+#header nav {
+    height: inherit;
+    clear: both;
+    width: 70%;
+    display: inline;
+}
+#header ul {
+    height: inherit;
+    margin-top: 0;
+    margin-bottom:0;
+    /*float: right;*/
+
+}
+#header nav li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#header nav a:hover {
+    color:rgb(0,127,122);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.navi {
+ /*   background-color: #D197E8;
+    border: 1px dashed #fff;
+    -webkit-border-radius:6px;
+    -webkit-box-shadow: 0 0 0 4px #D197E8, 2px 2px 4px 4px rgba(25,25,25,.8);*/
+    color: #2B313D;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+#header ul li:after {
+    /*position: absolute;*/
+    bottom: 0;
+    left: 50%;
+    height: 5px;
+    width: 0%;
+    border-bottom: 3px double rgb(0,127,122);
+    display: block;
+    content: '';
+    transition: 0.3s;
+}
+ #header nav li:hover:after{
+    left:0;
+    width:100%;
+}
+
+/* Starting from About*/
+#main-content {
+    margin: auto;
+    width: 100%;
+}
+.main {
+    text-align: center;
+    width: 100%;
+}
+#up-arrow{
+    float: right;
+    margin-right: 2em;
+}
+#pro {
+    margin: auto;
+    width: 10%;
+    font-size: 2em;
+    color: #EAE7DB;
+     position: relative;
+}
+.short-cut {
+
+    width: 33.3%;
+    margin: 3em ;
+   /* border-radius: 20px;*/
+    display: inline-block;
+    font-size: 13px;
+    background-color: #EAE1DB;
+
+}
+.short-cut h2 {
+    font-size: 2em;
+}
+h3 {
+    display: block;
+    font-size: 1.35em;
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 2em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight:inherit;
+    color: #ffffff;
+}
+h3 a {
+    color: #99ffff;
+}
+.short-cut p {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5em;
+
+}
+.short-cut img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+}
+/* changes start here*/
+.short-cut a {
+  float: left;
+  position: relative;
+}
+
+/*.short-cut a img {
+  display: block;
+}*/
+.short-cut a .content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,127,122,1);
+  color: #ddd;
+  padding: 20px;
+}
+.short-cut a:hover .content {
+  display: block;
+}
+
+/* changes till here*/
+
+#about-me-div {
+    clear:both;
+    text-align: center;
+}
+
+#about-me {
+    text-align: center;
+    width:100%;
+    height: 450px;
+    background-color: #EAE1DB;
+    text-align: center;
+    padding-top: 100px;
+}
+#about-me p {
+    width: 60%;
+    font-size: 1.5em;
+    margin: 4em auto;
+}
+#project-div {
+    clear: both;
+    margin-bottom: 50px;
+}
+#project {
+    min-height: 700px;
+    padding-top: 20px;
+}
+
+#contact-me-div {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    padding-top: 1px;
+    background-color: #2B313D;
+    color: #EAE7DB;
+    border-top:1px solid #EAE7DB;
+}
+#contact-me a {
+    color: #EAE7DB;
+    text-decoration: none;
+}
+#contact-me ul li{
+    display: inline;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 1.25em;
+}
+
+
+
+#contact-me {
+    width: 100%;
+}
+
+#footer {
+padding:1em;
+}
+/*--------------------------------------------------*/
+@media (max-width: 400px) {
+
+    #header{
+      margin:auto ;
+      padding-bottom: 0;
+    }
+
+    #header nav li {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    }
+    #about-me img {
+        display: none;
+    }
+     #about-me {
+        padding:1em;
+     }
+    #pro {
+        width: 25%;
+    }
+    .short-cut {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main {
+
+        font-size: 1em;
+    }
+    #about-me {
+        font-size: 1em;
+    }
+    #contact-me ul li{
+        padding: 5px;
+        font-size: 1em;
+        display: inline-block;
+    }
+    #contact-me-div {
+        text-align: left;
+        padding-top: 0;
+    }
+    #project-div {
+        margin-bottom: 20px;
+
+    }
+    #project {
+        display: block;
+    }
+    #up-arrow {
+       display: none;
+    }
+
+}
+/*---------------------------------------------*/
+@media (min-width: 401px) and (max-width: 939px) {
+    #header {
+        text-align: center;
+    }
+
+    #contact-me ul li{
+        padding: 5px;
+        font-size: 1em;
+
+    }
+    #contact-me-div {
+        text-align: center;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 940px) {
+    #header nav {
+        width: 45%;
+        display: inline;
+    }
+    #header nav li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
