@@ -223,6 +223,7 @@ h3 a {
 @media(min-width: 1px)and (max-width: 400px) {
     #header{
       /*margin:auto;*/
+      display: block;
       padding-bottom: 0;
     }
     /*#header nav {
