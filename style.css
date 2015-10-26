@@ -35,16 +35,8 @@ body {
     height: inherit;
     margin-top: 0;
     margin-bottom:0;
-    /*float: right;*/
+}
 
-}
-#header nav li {
-    display: inline-block;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
 #header nav a:hover {
     color:rgb(0,127,122);
     -webkit-transition: all 0.2s linear;
@@ -85,7 +77,7 @@ body {
 }
 .main {
     text-align: center;
-    width: 100%;
+    /*width: 100%;*/
 }
 #up-arrow{
     float: right;
@@ -169,16 +161,16 @@ h3 a {
 
 #about-me {
     text-align: center;
-    width:100%;
+    /*width:100%;*/
     min-height: 60%;
     background-color: #EAE1DB;
     text-align: center;
-    padding-top: 12%;
+    padding-top: 3%;
 }
 #about-me p {
     width: 60%;
     font-size: 1.5em;
-    margin: 4em auto;
+    margin: 5em auto;
 }
 #project-div {
     clear: both;
@@ -229,7 +221,7 @@ h3 a {
     /*#header nav {
      display: none;
     }*/
-    #header nav li {
+#header nav li {
     display: inline-block;
     margin-left: 1em;
     margin-right: 1em;
